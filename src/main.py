@@ -2,6 +2,8 @@
 General testing.
 """
 
+from other import Person
+
 
 def main() -> None:
     """
@@ -9,6 +11,12 @@ def main() -> None:
     """
 
     print("Hello, world!")
+
+    me: Person = Person("John", 37)
+    me.greet()
+    me.have_birthday()
+    me.greet()
+    me.have_birthday()
 
 
 if __name__ == "__main__":
